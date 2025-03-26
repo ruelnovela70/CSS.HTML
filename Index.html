@@ -6,56 +6,63 @@
     <title>MY RESUME</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            line-height: 1.6;
-            color: #333;
-            background-image: url("IMG_20250323_153953_494.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            text-align: justify;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 20px; /* Added more spacing */
-        }
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 10px; /* Added more spacing */
-            border: 3px solid #800080;
-        }
-        h1 {
-            color: #007bff;
-            font-size: 2em;
-        }
-        p {
-            color: #333; /* Changed to a more readable color */
-        }
-        h2, li {
-            color: #800080;
-            font-weight: bold;
-            margin-bottom: 10px; /* Added more spacing */
-        }
-        section {
-            margin-bottom: 20px; /* Added more spacing */
-            padding: 10px; /* Increased padding */
-            border-bottom: 1px solid #ddd;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        strong {
-            font-weight: bold;
-        }
-        address {
-            font-style: normal;
-            color: #fff;
-        }
-        .highlight {
-            color: #007bff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.resume {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #4A6572; /* Teal primary color */
+    color: white;
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar h1 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    border-left: 6px solid #66CDAA; /* Accent color */
+    padding-left: 15px;
+}
+
+section h2 {
+    color: #66CDAA; /* Accent color */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
         }
     </style>
 </head>
